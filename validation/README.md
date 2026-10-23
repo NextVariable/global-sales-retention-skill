@@ -1,0 +1,21 @@
+# 验证记录
+
+本轮在 2026-10-23 UTC 使用一个不继承开发对话的新模型上下文，实际执行三个合成业务任务。三个任务在该上下文依次完成，不是三次独立实验；没有普通提示或竞品对照，也没有测量自动触发准确率。
+
+| 任务 | 实际观察 | 本轮判断 |
+|---|---|---|
+| [部署与容量冲突](forward-tests/deal.input.md) | [原稿](forward-tests/deal.output.md)识别仅余 4 小时但试点需 6 小时；保留云部署限制和未授权折扣，交出英文跟进稿 | 能推进适配确认，没有假承诺完整试点 |
+| [首次价值阻塞](forward-tests/activation.input.md) | [原稿](forward-tests/activation.output.md)保留 Run check，区分映射完成与真正运行；权限阻塞交 owner 授权后恢复 | 给出具体动作和恢复路径，没有用催升级替代修复 |
+| [取消、续费与收入](forward-tests/retention.input.md) | [原稿](forward-tests/retention.output.md)算出 NRR 105%、GRR 85%；排除新客、一次性费用及欧元；尊重取消与停止优惠要求 | 计算和客户状态处理符合输入，未假称已经取消 |
+
+以上为维护者逐份语义审阅，并非独立盲评。运行文件、输入与输出哈希、当时方法文件哈希见 [manifest.json](forward-tests/manifest.json)。原始输出保留；如需修改方法，重新运行受影响场景，不覆盖原稿。
+
+安装单元通过结构、内部链接和客户端元数据检查，也运行了 skill-creator 的 `quick_validate.py`。没有业务脚本，未为自然语言方法制造关键词评分测试。开发入口：
+
+```bash
+python3 scripts/validate.py
+```
+
+验证器只检查安装边界、格式及已记录输入输出与当前方法版本的一致性，不能自动判断销售质量。更多待测任务在 [scenarios.md](scenarios.md)，仍保留待测身份，不计入本轮三个结果。
+
+当前可作为独立 Skill 使用。实际 CRM 写入、消息送达、取消订阅、母语客户理解、成交和成熟续费效果尚未验证；任务中的金额和客户均为合成资料，不能作为业务成绩。

@@ -1,0 +1,4 @@
+interface:
+  display_name: "海外销售转化与客户增长"
+  short_description: "从线索推进、试点成交到产品激活、客户续费与合理扩展，明确下一项行动"
+  default_prompt: "使用 $global-sales-retention，根据当前客户沟通、使用情况与交付限制，判断购买或留存的主要阻碍，并交付下一步能直接使用的材料。"

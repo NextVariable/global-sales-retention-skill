@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "recorded_date_utc": "2026-10-23",
+  "execution": "actual model sub-agent run",
+  "isolation": "One fresh context for this skill; three tasks ran sequentially in that context. No development history or grading notes supplied.",
+  "model": "Inherited host model; exact build, sampling configuration, tokens and cost unavailable.",
+  "limitations": "Synthetic tasks, no customer or production actions. Not a competitor comparison or measured automatic-trigger evaluation.",
+  "runs": {
+    "test_sales": {
+      "fork_turns": "none",
+      "runtime_sha256": {
+        "skills/global-sales-retention/LICENSE": "4f18feab6cac96e3e33da744be4cd74db6b779326008bfaf2b3243ecf16811ca",
+        "skills/global-sales-retention/SKILL.md": "cfbcf3e3d44d7bbd84053371f1e9c2db946e2c104e19b0449d642faab020e2fa",
+        "skills/global-sales-retention/agents/openai.yaml": "598b124ffd420268ecb57c81347fde6b9db1b681c0a55726c5c5820e91c794bd",
+        "skills/global-sales-retention/references/activation-and-conversion.md": "3814a508bba15254428eb9cf8747d5197941ef1bc329b54aeb669d10939a003a",
+        "skills/global-sales-retention/references/deal-and-delivery.md": "6b355a86793f38ba2a94c221448f491ba39a7d99e1b5d01232a97f676fc391d2",
+        "skills/global-sales-retention/references/discovery-and-motion.md": "529e7c2478cd4216cb9365ce1d4ffdab33b0cc79ef105c424d8ecb19f3df24ea",
+        "skills/global-sales-retention/references/execution-and-handoff.md": "21c2a96e356d5a59d91865e54058dc647986178e77dfb8fd1010a8a4ea2abeee",
+        "skills/global-sales-retention/references/retention-and-expansion.md": "eeee9cd6eab30ef9fe9d8f32d2f08c0a3ea7e31a544412a73641a9034731b746",
+        "skills/global-sales-retention/templates/customer-handoff.md": "d7ce5c3e357132f71891141611a916f2c7051c60d3b1f338794a2574bf99b258"
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "deal",
+      "run": "test_sales",
+      "input_file": "deal.input.md",
+      "input_sha256": "5a3490d725939fe9cdbc917baf8211a836768fe0a844c7174046c9651579709a",
+      "output_file": "deal.output.md",
+      "output_sha256": "be2e40a02df9247694b3d0a5ce0524035dbda439bcd9025eca4d51983dd777f4"
+    },
+    {
+      "id": "activation",
+      "run": "test_sales",
+      "input_file": "activation.input.md",
+      "input_sha256": "65a6d56fd8ef33ef101f160f62e9c3e31ed2a4baf97f7b41390c6f87faae202a",
+      "output_file": "activation.output.md",
+      "output_sha256": "7d4e294e3e7ba7e60a9b689614ea06849246b9700249723cc9fc9231013300ce"
+    },
+    {
+      "id": "retention",
+      "run": "test_sales",
+      "input_file": "retention.input.md",
+      "input_sha256": "e4cc341206b260fb7e1441e77aee7566276fa6872d0e1ef9822fd0fd733ef9c9",
+      "output_file": "retention.output.md",
+      "output_sha256": "077b001a17936e8c01eee26be6c2b0e2e0995b1b522d250f15e607b747389550"
+    }
+  ],
+  "accepted_runtime_sha256": {
+    "skills/global-sales-retention/LICENSE": "4f18feab6cac96e3e33da744be4cd74db6b779326008bfaf2b3243ecf16811ca",
+    "skills/global-sales-retention/SKILL.md": "cfbcf3e3d44d7bbd84053371f1e9c2db946e2c104e19b0449d642faab020e2fa",
+    "skills/global-sales-retention/agents/openai.yaml": "598b124ffd420268ecb57c81347fde6b9db1b681c0a55726c5c5820e91c794bd",
+    "skills/global-sales-retention/references/activation-and-conversion.md": "3814a508bba15254428eb9cf8747d5197941ef1bc329b54aeb669d10939a003a",
+    "skills/global-sales-retention/references/deal-and-delivery.md": "6b355a86793f38ba2a94c221448f491ba39a7d99e1b5d01232a97f676fc391d2",
+    "skills/global-sales-retention/references/discovery-and-motion.md": "529e7c2478cd4216cb9365ce1d4ffdab33b0cc79ef105c424d8ecb19f3df24ea",
+    "skills/global-sales-retention/references/execution-and-handoff.md": "21c2a96e356d5a59d91865e54058dc647986178e77dfb8fd1010a8a4ea2abeee",
+    "skills/global-sales-retention/references/retention-and-expansion.md": "eeee9cd6eab30ef9fe9d8f32d2f08c0a3ea7e31a544412a73641a9034731b746",
+    "skills/global-sales-retention/templates/customer-handoff.md": "d7ce5c3e357132f71891141611a916f2c7051c60d3b1f338794a2574bf99b258"
+  }
+}
